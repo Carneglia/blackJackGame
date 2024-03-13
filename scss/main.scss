@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+%button {
+    background-color: #5ab15a;
+    width: 150px;
+    border: 1px solid #5ab15a;
+    width: 150px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: 0.7s;
+    font-weight: bold;
+    margin-top: 5px;
+}
+%box{
+    border: 2px solid #3c7a3c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 150px;
+}
+
+body {
+    width: 100%;
+}
+
+.main-container {
+    background-image: url(../recourses/images/pano2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 100vh;
+    opacity: 0.9;
+    padding-bottom: 20px;
+    img{
+        margin-top: 20px;
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cards-el {
+            @extend %box;
+        }
+
+        .sum-el {
+          @extend %box;
+            width: 100px;
+        }
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .start-btn {
+            @extend %button;
+        }
+
+        .start-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .extra-card {
+            @extend %button;
+            display: none;
+        }
+
+        .extra-card:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    h1 {
+        margin: 20px;
+    }
+
+    h2 {
+        margin: 20px;
+    }
+
+    h3 {
+        margin: 20px;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+}

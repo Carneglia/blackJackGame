@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackJack</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
- <div class="main-container">
-    <img src="./recourses/images/pano.png" alt="Paño de BlackJack">
- </div>
-    
+    <div class="main-container">
+        <img src="./recourses/images/logo.png" alt="Logo BlackJack">
+        <section>
+            <h1>Welcome to BlackJack</h1>
+            <h2 id="message-el">We will wish you the best!</h2>
+            <div class="div">
+                <h3 class="cards-el" id="cards-el"></h3>
+                <h3 class="sum-el" id="sum-el"></h3>
+            </div>
+            <div class="buttons">
+                <button onclick="startGame()" class="start-btn" id="start-el">START GAME</button>
+                <button onclick="extraCard()" class="extra-card" id="extra-el">NEW CARD</button>
+            </div>
+
+        </section>
+
+    </div>
+
     <script src="./js/main.js"></script>
 </body>
+
 </html>
