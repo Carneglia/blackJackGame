@@ -16,12 +16,13 @@
     transition: 0.7s;
     font-weight: bold;
     margin-top: 5px;
+    font-size: 1rem;
 }
 %box{
     border: 2px solid #3c7a3c;
     border-radius: 5px;
     padding: 5px 10px;
-    width: 150px;
+    width: 250px;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
 
         .sum-el {
           @extend %box;
-            width: 100px;
+            width: 150px;
         }
 
     }
@@ -86,6 +87,7 @@ body {
 
     h2 {
         margin: 20px;
+        font-style: italic;
     }
 
     h3 {
@@ -96,4 +98,14 @@ body {
         margin: 20px;
     }
 
+}
+@media (max-width: 600px){
+    .main-container{
+        h2{
+            font-size: 1rem;
+        }
+        img{
+            width: 100%;
+        }
+    }
 }

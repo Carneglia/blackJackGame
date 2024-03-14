@@ -14,13 +14,14 @@
   padding: 10px 20px;
   transition: 0.7s;
   font-weight: bold;
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-size: 1rem; }
 
 .main-container .div .cards-el, .main-container .div .sum-el {
   border: 2px solid #3c7a3c;
   border-radius: 5px;
   padding: 5px 10px;
-  width: 150px; }
+  width: 250px; }
 
 body {
   width: 100%; }
@@ -40,7 +41,7 @@ body {
     flex-direction: column;
     align-items: center; }
     .main-container .div .sum-el {
-      width: 100px; }
+      width: 150px; }
   .main-container .buttons {
     display: flex;
     flex-direction: column;
@@ -56,8 +57,15 @@ body {
   .main-container h1 {
     margin: 20px; }
   .main-container h2 {
-    margin: 20px; }
+    margin: 20px;
+    font-style: italic; }
   .main-container h3 {
     margin: 20px; }
   .main-container p {
     margin: 20px; }
+
+@media (max-width: 600px) {
+  .main-container h2 {
+    font-size: 1rem; }
+  .main-container img {
+    width: 100%; } }
